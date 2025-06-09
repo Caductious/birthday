@@ -1,0 +1,1 @@
+x-terminal-emulator -e "bash -c 'java -jar /usr/local/bin/birthday/birthday-0.1-SNAPSHOT.jar $USER; echo \"\nПрограмма завершена. Нажмите Enter...\"; read'"
