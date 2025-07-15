@@ -9,6 +9,7 @@ public class Main{
         try{
             File file = new File("/home/" + args[0] + "/.birthday_autism.conf");
             Scanner scan_file = new Scanner(file);
+            Scanner scan = new Scanner(System.in);
             String bd = scan_file.nextLine();
             String today = new SimpleDateFormat("MM-dd").format(new Date());
             if(today.equals(bd)) {
@@ -27,8 +28,11 @@ public class Main{
                         "⣿⣿⣿⣿⣿⣿⣿⣷⢸⣿⣿⣿⡟⠀⣿⣿⣿⡇⣿⣿⠀⣿⣿⣿⠇\n" +
                         "⣿⣿⣿⣿⣿⣿⣿⣿⡎⣿⣿⣿⡇⣧⢹⣿⣿⡇⠿⢏⣴⠹⣿⠟⣸\n" +
                         "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣌⣛⣛⣃⣿⣧⣛⣋⣼⣿⣿⣿⣷⣶⣾⣿\n" +
-                        "С ДНЮХОЙ ЙООООООУ ЙОООООУ ЙОООУ");
+                        "С ДНЮХОЙ ЙООООООУ ЙОООООУ ЙОООУ\n" +
+                        "Нажми Enter, чтоб выйти");
+                scan.nextLine();
             }
+
         }catch(java.io.FileNotFoundException e){
             System.out.println("НЕЕЕЕЕЕТ, ТЫ ЧЕГО НАДЕЛАЛ ТЫ УДАЛИЛ ФАЙЛЫ ИЛИ УСТАНОВИЛ НЕ ТАК И ТЕПЕРЬ У ТЕБЯ");
             System.out.println(e);
